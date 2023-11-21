@@ -2,6 +2,8 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <stdio.h>
+
 /**
  * struct print - struct name
  * @f_type: type of format
@@ -20,5 +22,5 @@ int p_int_rec(long int n, int count);
 int p_float(va_list list);
 int _putchar(char c);
 int _printf(const char *format, ...);
-int p_percent(va_list list);
+void p_percent(const char *format, ...);
 #endif
