@@ -1,12 +1,10 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdlib.h>
 
 /**
- * p_char - function of printing char
+ * p_char - function to print char
  * @list: list of char
- * Return: return the nr of elements
- */
+ * Return: return the number of elements
+*/
 int p_char(va_list list)
 {
 	char c = va_arg(list, int);
@@ -14,11 +12,12 @@ int p_char(va_list list)
 	_putchar(c);
 	return (1);
 }
+
 /**
- * p_str - function of printing string
+ * p_str - function to print string
  * @list: list of string
- * Return: return the nr of element
- */
+ * Return: return the number of elements
+*/
 int p_str(va_list list)
 {
 	int i;
@@ -31,12 +30,13 @@ int p_str(va_list list)
 		_putchar(str[i]);
 	return (i);
 }
+
 /**
  * p_int_rec - print int digits
  * @n: number
  * @count: digits counter
  * Return: return the digits counter
- */
+*/
 int p_int_rec(long int n, int count)
 {
 	int nr_digits = count;
@@ -53,12 +53,12 @@ int p_int_rec(long int n, int count)
 	_putchar(n % 10 + '0');
 	return (nr_digits);
 }
+
 /**
  * p_int - print int
- * @list: list of elem
+ * @list: list of elements
  * Return: return the value
- *
- */
+*/
 int p_int(va_list list)
 {
 	long int n;
@@ -68,15 +68,28 @@ int p_int(va_list list)
 		return (p_int_rec(n, 2));
 	return (p_int_rec(n, 1));
 }
+
 /**
  * p_percent - function of printing percent character
- *
+ * @format: a pointer to the character string
  * Return: return the nr of element
- *
- */
-
-int p_percent(va_list list);
+*/
+void p_percent(const char *format, ...)
 {
-	write(1, format, 1);
-	return (1)
+	va_list args;
+	va_start(args, format);
+
+	while (*format)
+	{
+		if (*format == '%')
+		{
+			_putchar('%');
+		}
+		else
+		{
+			_putchar(*format);
+		}
+		format++;
+	}
+	va_end(args);
 }
