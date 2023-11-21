@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
+
 /**
- * p_char - fun of printing char
+ * p_char - function of printing char
  * @list: list of char
  * Return: return the nr of elements
  */
@@ -14,7 +15,7 @@ int p_char(va_list list)
 	return (1);
 }
 /**
- * p_str - fun of printing string
+ * p_str - function of printing string
  * @list: list of string
  * Return: return the nr of element
  */
@@ -68,7 +69,7 @@ int p_int(va_list list)
 	return (p_int_rec(n, 1));
 }
 /**
- * p_percent - fun of printing percent character
+ * p_percent - function of printing percent character
  *
  * Return: return the nr of element
  *
