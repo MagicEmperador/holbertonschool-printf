@@ -67,3 +67,15 @@ int p_int(va_list list)
 		return (p_int_rec(n, 2));
 	return (p_int_rec(n, 1));
 }
+/**
+ * p_percent - fun of printing percent character
+ *
+ * Return: return the nr of element
+ *
+ */
+
+int p_percent(va_list list);
+{
+	write(1, format, 1);
+	return (1)
+}
