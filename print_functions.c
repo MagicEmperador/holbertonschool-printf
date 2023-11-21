@@ -72,7 +72,7 @@ int p_int(va_list list)
 /**
  * p_percent - function of printing percent character
  * @format: a pointer to the character string
- * Return: return the nr of element
+ * Return: return the percent character
 */
 void p_percent(const char *format, ...)
 {
