@@ -1,0 +1,96 @@
+NAME
+
+	_printf - formatted output function
+
+SYNOPSIS
+
+	#include <stdio.h>
+
+	int _printf(const char *format, ...)
+
+
+DESCRIPTION
+
+	The function _printf is used to output different data types passed as arguments. The function prints arguments like char, char *, int, long int using the '%'
+	placeholder followed by a character.
+
+RETURN VALUE
+
+       Upon successful return, the function _printf returns the number of characters printed, excluding the null byte used to end output to strings.
+
+
+EXAMPLES
+
+	1. Printing chars using %c (a format specifier to handle characters) within the function _printf
+
+	   _printf("Character:[%c]\n", 'H');
+
+	   will print to screen:
+
+	   Character:[H]
+
+
+	2. Printing strings using %s (a format specifier to handle string) within the function _printf.
+
+	   _printf("String:[%s]\n", "I am a string !");
+
+	   will print to screen:
+
+	   String:[I am a string !]
+
+
+	3. Printing percentage symbol '%' by using '%%' in the format string. This is because '%' is a special character in the function _printf format strings and is used
+	   to indicate format specifiers. When _printf function encounters '%%' in the format string, it will print a single '%' character to the output. The first '%'
+	   serves as an escape character, indicating to _printf function that the second '%' should be treated as a literal character to be printed, rather than a
+	   beginning of a format specifier.
+
+	   _printf("Percent:[%%]\n");
+
+	   will print to screen:
+
+	   Percent:[%]
+
+
+	4. Printing signed decimal integers (both positive and negative) using %d format specifier withing the function _printf.
+
+	   _printf("Negative:[%d]\n", -762534);
+
+	   will print to screen:
+
+	   Negative:[-762534]
+
+
+	5. Printing integers using %i (a format specifier to handle integers of decimal, hexadecimal or octal type) within the function _printf.
+
+	   unsigned int ui;
+	   void *addr;
+
+	   _printf("Unsigned:[%u]\n", ui);
+
+	   will print to screen:
+
+	   Unsigned:[2147484671]
+
+
+	   _printf("Unsigned octal:[%o]\n", ui);
+
+	   will print to screen:
+
+	   Unsigned octal:[20000001777]
+
+
+	   _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+
+	   will print to screen:
+
+	   Unsigned hexadecimal:[800003ff, 800003FF]
+
+
+NOTES
+	No limitations or errors encountered.
+
+
+AUTHORS
+
+	José Duarte Marcos and Oana Fundatureanu
+
