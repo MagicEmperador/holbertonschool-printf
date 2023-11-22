@@ -58,3 +58,4 @@ NOTES:
 
 FLOWCHART:
 
+![Flowchart Printf](https://github.com/MagicEmperador/holbertonschool-printf/assets/144609420/2078e8e2-fac7-4842-b91e-6d18932e1913).
