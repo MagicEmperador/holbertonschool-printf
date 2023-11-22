@@ -3,7 +3,7 @@
 
 ### TEAM PROJECT:
 
-[![Static Badge](https://img.shields.io/badge/build-Oana-brightgreen?logo=github&label=Github&labelColor=19199&color=191919
+[![Static Badge](https://img.shields.io/badge/build-Oana-brightgreen?logo=github&label=Github&labelColor=e80c0c&color=191919
 )](https://github.com/OanaFun)
 
 [![Static Badge](https://img.shields.io/badge/build-José-brightgreen?logo=github&label=Github&labelColor=19199&color=191919
