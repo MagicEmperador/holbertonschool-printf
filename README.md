@@ -1,17 +1,17 @@
-C – printf
+# C – printf
 
 
-TEAM PROJECT:
+### TEAM PROJECT:
 
 	    José Duarte Marcos, Oana Fundatureanu
 
 
-COMPILATION:
+### COMPILATION:
 
 	    All the files will be compiled on Ubuntu 20.04 LTS using gcc command, and the options -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format.
 
 
-DESCRIPTION OF FUNCTION _printf:
+### DESCRIPTION OF FUNCTION _printf:
 
 	    _printf function is a custom function designed to emulate the behavior of the standard 'printf' function.
 
@@ -20,18 +20,18 @@ DESCRIPTION OF FUNCTION _printf:
 	    It iterates through a 'format' string, indentifying format specifiers (those preceded by '%') and prints characters or interprets specifiers accordingly.
 
 
-PARAMETERS:
+### PARAMETERS:
 
 	    'format': A pointer to a character string representing the format string. This string contains both text to be printed as-is and format specifiers for variable
 	    	      substitution.
 
 
-RETURN VALUE:
+### RETURN VALUE:
 
 	    'int': The function returns the number of characters printed (excluding the null byte used to end output to strings)
 
 
-USAGE:
+### USAGE:
 
 	    The function uses a variable argument list ('va_list' and related functions from 'stdarg.h' library) to handle the variable number of arguments passed after
 	    the 'format' parameter.
@@ -47,7 +47,7 @@ USAGE:
 	    The function returns the total count of characters printed.
 
 
-NOTES:
+### NOTES:
 
 	    The supporting set of functions: 'p_char', 'p_str', 'p_int' used within the function can be found in file print_functions.c
 
@@ -56,6 +56,6 @@ NOTES:
 	    It checks for null pointers and incomplete format string to ensure proper function behaviour.
 
 
-FLOWCHART:
+### FLOWCHART:
 
 ![Flowchart Printf](https://github.com/MagicEmperador/holbertonschool-printf/assets/144609420/2078e8e2-fac7-4842-b91e-6d18932e1913).
