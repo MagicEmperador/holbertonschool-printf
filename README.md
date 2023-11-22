@@ -3,7 +3,11 @@
 
 ### TEAM PROJECT:
 
-	    José Duarte Marcos, Oana Fundatureanu
+[![Static Badge](https://img.shields.io/badge/build-Oana-brightgreen?logo=github&label=Github&labelColor=19199&color=191919
+)](https://github.com/OanaFun)
+
+[![Static Badge](https://img.shields.io/badge/build-José-brightgreen?logo=github&label=Github&labelColor=19199&color=191919
+)](https://github.com/MagicEmperador)
 
 
 ### COMPILATION:
