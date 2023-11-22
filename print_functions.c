@@ -68,28 +68,3 @@ int p_int(va_list list)
 		return (p_int_rec(n, 2));
 	return (p_int_rec(n, 1));
 }
-
-/**
- * p_percent - function of printing percent character
- * @format: a pointer to the character string
- * Return: return the percent character
-*/
-void p_percent(const char *format, ...)
-{
-	va_list args;
-	va_start(args, format);
-
-	while (*format)
-	{
-		if (*format == '%')
-		{
-			_putchar('%');
-		}
-		else
-		{
-			_putchar(*format);
-		}
-		format++;
-	}
-	va_end(args);
-}
