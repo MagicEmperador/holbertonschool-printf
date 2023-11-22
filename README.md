@@ -44,14 +44,14 @@ USAGE:
 
 	    If an unsupported or unrecognized specifier is encountered, it falls back to printing the specifier as a regular character.
 
-	    The functions returns the total count of characters printed.
+	    The function returns the total count of characters printed.
 
 
 NOTES:
 
 	    The supporting set of functions: 'p_char', 'p_str', 'p_int' used within the function can be found in file print_functions.c
 
-	    The functions handles both valid format specifiers and the literal '%%'escape sequence, printing a '%' character.
+	    The function handles both valid format specifiers and the literal '%%'escape sequence, printing a '%' character.
 
 	    It checks for null pointers and incomplete format string to ensure proper function behaviour.
 
